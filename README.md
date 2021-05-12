@@ -1,4 +1,22 @@
-## kubernetes-csi-driver-iscsiplugin
+
+# First of all 2021/05/12
+
+I can't configure `kubernetes-csi-driver-iscsi`
+But container is looking good.
+
+## trouble 1 iscsi driver not found
+
+iscsiplugin containers are running iscsid, so container's distribution must be match to host OS.
+if not, you'll encounter `iscsi driver not found`.
+
+## trouble 2 target LUN is fixed to 0
+
+https://github.com/kubernetes-csi/csi-driver-iscsi/issues/24
+
+In my environment, LUN I want to use is "1"
+LUN config is in yaml, but maybe ignored.
+
+# kubernetes-csi-driver-iscsiplugin
 
 Build container for csi-driver-iscsi https://github.com/kubernetes-csi/csi-driver-iscsi
 

@@ -1,8 +1,10 @@
 
 # First of all 2021/05/12
 
-I can't configure `kubernetes-csi-driver-iscsi`
+I can't configure `kubernetes-csi-driver-iscsi`.
 But container is looking good.
+
+I give up using `kubernetes-csi-driver-iscsi` for now. But will try again later.
 
 ## trouble 1 iscsi driver not found
 
